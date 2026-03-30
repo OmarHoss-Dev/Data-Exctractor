@@ -1,2 +1,20 @@
-# Data-Exctractor
-A Python-based utility for sales and HR teams to clean messy data. It uses Regex and AI to instantly pull Egyptian mobile numbers and emails from unstructured text, chats, or notes. Features a Streamlit web UI with automated data tabulating and CSV export, transforming hours of manual copy-pasting into a professional, one-click workflow.
+# Smart Contact Extractor (Streamlit)
+
+A simple Streamlit app that extracts:
+
+- Egyptian mobile numbers (matches `01[0125]` followed by 8 digits)
+- Email addresses
+
+## Run locally
+
+```bash
+pip install -r requirements.txt
+streamlit run extractor_app.py
+```
+
+## Deploy on Streamlit Community Cloud
+
+1. Push this repo to GitHub.
+2. In Streamlit Community Cloud, create a new app and select your repo.
+3. Set **Main file path** to `extractor_app.py`.
+
